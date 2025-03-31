@@ -1,46 +1,162 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ADB Command Runner</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
 </head>
-<body>
-    <div class="container">
-        <h1>Run ADB Commands</h1>
-        <form id="adbForm">
-            <label for="command">Enter ADB Command:</label>
-            <input type="text" id="command" name="command" placeholder="e.g., adb devices" required>
-            <button type="submit">Run Command</button>
-        </form>
 
-        <h2>Output:</h2>
-        <pre id="output"></pre>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <h2 class="logo">ADB Tool</h2>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="section1" id="sec1">
+        <div class="head">
+            <h1>Remove Unwanted Bloatware from Your Device! </h1>       
+       </div>
+        <div class="content">
+            <div class="lft backimg" id="lft1"></div>
+            <div class="rght backimg">
+                <p>
+                    <h3 id="sub1">INRODUCTION
+                        <br>
+                        <div class="break"></div>
+                    </h3>
+                   
+                    Say goodbye to unnecessary apps that slow down your phone and drain your battery. <br> <br>
+                    Easily remove pre-installed apps from your phone using this tool. <br><br> Free up space, boost performance, and take control of your device! <br><br>
+                    <!-- Bloatware refers to pre-installed apps that come with your smartphone, tablet, or PC often added by manufacturers or service providers. <br> <br>  These apps may include trial versions of software, promotional tools, or unnecessary system apps that you never use but still take up space.  
+                   <br> <br>Removing them can improve speed, battery life, and security. -->
+                </p>
+                
+                
+            </div>
+
+        </div>
     </div>
 
-    <script>
-        document.getElementById('adbForm').addEventListener('submit', async (e) => {
-            e.preventDefault();
+    <!-- here div 2 starts------------------------------------------------------------------------------------------------------------------------------->
+   
+    <div class="section1" id="sec2">
+        <div class="head">
+            <h1>What is Bloatware? </h1>       
+       </div>
+        <div class="content">
+            
+            <div class="rght backimg">
+                
+               
+                <p>
+                    <h3 id="sub1">INRODUCTION
+                        <br>
+                        <div class="break"></div>
+                    </h3>
+                   
+                    Bloatware refers to pre-installed apps that you never use but take up storage and slow down your device. Removing them can improve speed, battery life, and security<br><br>
+                    <!-- Bloatware refers to pre-installed apps that come with your smartphone, tablet, or PC often added by manufacturers or service providers. <br> <br>  These apps may include trial versions of software, promotional tools, or unnecessary system apps that you never use but still take up space.  
+                   <br> <br>Removing them can improve speed, battery life, and security. -->
+                </p>
+                
+                
+            </div>
+            <div class="lft backimg" id="lft2"></div>
 
-            const command = document.getElementById('command').value;
-            const outputElement = document.getElementById('output');
+        </div>
+    </div>
 
-            try {
-                const response = await fetch('/run-adb', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({ command }),
-                });
+    <!-- here div 2 starts------------------------------------------------------------------------------------------------------------------------------->
+   <!-- here div 3 starts------------------------------------------------------------------------------------------------------------------------------->
 
-                const result = await response.json();
-                outputElement.textContent = result.output || result.error;
-            } catch (error) {
-                outputElement.textContent = `Error: ${error.message}`;
-            }
-        });
-    </script>
+   <div class="section1" id="sec3">
+    <div class="head" >
+        <h1>Steps To Be Followed</h1>       
+   </div>
+    <div class="content">
+        <div class="lft backimg" id="lft3"></div>
+        <div class="rght backimg">
+            <p>
+                <h3 id="sub1">STEPS
+                    <br>
+                    <div class="break"></div>
+                </h3>
+                Step 2: Enable Developer Mode on Your Phone
+                <br><br>
+                Step 3: Set Up the Project
+                <br><br>
+                Step 4: Connect Your Phone 
+                <br><br>
+                <!-- Bloatware refers to pre-installed apps that come with your smartphone, tablet, or PC often added by manufacturers or service providers. <br> <br>  These apps may include trial versions of software, promotional tools, or unnecessary system apps that you never use but still take up space.  
+               <br> <br>Removing them can improve speed, battery life, and security. -->
+            </p>
+            
+            
+        </div>
+
+    </div>
+</div>
+
+    <!-- here div 3 starts------------------------------------------------------------------------------------------------------------------------------->
+
+
+
+
+
+
+    <!-- <div class="class1 class2">
+    it is class 2
+</div>
+<div class="class1">
+    it is class 2
+</div>
+<div class="class1 class3">
+    it is class 2
+</div> -->
+
+<!-- here div 4 starts------------------------------------------------------------------------------------------------------------------------------->
+
+    <!-- Main Content -->
+    <div class="section1" id="sec4">
+        <div class="head" >
+            <h1>Let's Start</h1>       
+       </div>
+     <div class="abovecontainer">
+        <!-- <div class="left class1">
+            it is left
+        </div> -->
+        <div class="container">
+            <h1>BLOATWARE REMOVER TOOL</h1>
+            <form id="adbForm">
+                <label for="command">Enter Command:</label>
+                <input type="text" id="command" name="command" placeholder="e.g., adb devices" required>
+                <button type="submit">Run Command</button>
+            </form>
+
+            <h2>Output:</h2>
+            <pre id="output"></pre>
+        </div>
+        <!-- <div class="right class1">
+            it is right
+        </div> -->
+     </div>
+    </div> 
+    <!-- Footer -->
+    <footer>
+        <p>© 2025 ADB Bloatware Remover | Developed by Your Name</p>
+        <p>Disclaimer: This tool is for educational purposes only. Use at your own risk.</p>
+    </footer>
+
+    <script src="scripts.js"></script>
 </body>
+
 </html>

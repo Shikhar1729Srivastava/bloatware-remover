@@ -1,31 +1,107 @@
+/* Navigation Bar */
+header {
+    width: 100%;
+    /* background-color: #007bff; */
+    padding: 1rem 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #dfe3e6;
+}
+
+ /* Footer  */
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: #007bff;
+    color: white;
+    margin-top: 20vh;
+}
+
+footer p {
+    margin: 5px 0;
+    font-size: 0.9rem;
+}
+
 /* General styles */
 body {
     font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
+    background-color:black;
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
+    overflow-x: hidden;
+}
+nav{
+    display: flex;
+    flex-direction: row;
 }
 
 /* Container for the form */
 .container {
-    background-color: #ffffff;
+    background-color: #000000;
+    background-image: url(images/rrr.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+box-shadow:5px 5px 5px 5px red ;
     padding: 2rem;
-    border-radius: 8px;
+    margin: 16vh;
+    border-radius: 62px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
+    width: 40vmin;
+    height: 80vmin;   
     max-width: 400px;
     text-align: center;
 }
 
 /* Heading */
 h1 {
-    font-size: 1.5rem;
-    color: #333333;
-    margin-bottom: 1.5rem;
+    font-size: 2.2rem;
+    color: #8db2c1;
+    text-shadow: 2px 2px 2px black;
+    margin-top: 4vh;
 }
 
 /* Form styles */
@@ -36,7 +112,9 @@ form {
 
 label {
     font-size: 0.9rem;
-    color: #555555;
+    /* color: #555555; */
+    color:#ff7378;
+    /* text-shadow: .1px .1px .1px white; */
     margin-bottom: 0.5rem;
     text-align: left;
 }
@@ -73,21 +151,43 @@ button:hover {
 /* Output section */
 h2 {
     font-size: 1.2rem;
-    color: #333333;
+    color:red;
     margin-top: 1.5rem;
 }
 
-pre {
-    background-color: #061b30;
+/* pre {
+    background-color: black;
     padding: 1rem;
     border: 1px solid #cccccc;
     border-radius: 4px;
     font-family: monospace;
     font-size: 0.9rem;
-    color: #99a9ee;
+    color:white;
     text-align: left;
     overflow-x: auto;
+} */
+
+pre {
+    
+    background-color: transparent; /* Makes background transparent */
+    color: rgb(102, 245, 102); /* Sets text color to green */
+    padding: 0.8rem;
+    /* border: 1px solid #cccccc; */
+    border-radius: 4px;
+    font-family: monospace;
+    font-size: 20rem;
+    font-size: 1.37em;
+    text-align: left;
+    overflow: auto;
+    animation: fadeIn 0.5s ease-in-out;
+    height: 35vh;
+    border-radius: 30px;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    box-shadow: 0px 0px 30px 4px #000000;
 }
+
+
 
 input[type="text"]:hover {
     border-color: #007bff;
@@ -109,4 +209,170 @@ pre {
     to {
         opacity: 1;
     }
+}
+.break
+{
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: white;
+    height: 1px;
+}
+.class1{
+    background-color: #000000;
+    background-image: url(images/ai-generated-8782744.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    height: 100vh;
+    width: 100vw;
+}
+.class2{
+    background-image: url(images/glitter-7911733.jpg);
+}
+.class3{
+    background-image: url(images/network-6511448.jpg);
+}
+.left{
+    background-image: url(images/internet-3113279.jpg);
+    height: 50vh;
+    width: 50vh;
+    margin-left: 20vh;
+}
+.abovecontainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+.right{
+    /* background-color: red; */
+    
+    background-image: url(images/android-mobile-app-development-7815022.png);
+    height: 50vh;
+    width: 50vh;
+    margin-right: 20vh;
+}
+
+.first{
+    background-image: url(images/media-470346.png);
+}
+.section1{
+    display: flex;
+    flex-direction:column;
+    /* background-color: #a54343; */
+    
+    /* background-image: url(images/network-6511448.jpg); */
+
+    
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    /* height: 100vh;*/
+    width: 100vw; 
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 5vh;
+    padding-bottom: 5vh;
+}
+#sec1{
+    background-image: url(images/ai-generated-8782744.jpg);
+    /* opacity: 0.5; */
+}
+#sec2{
+    background-image: url(images/glitter-7911733.jpg);  
+}
+#sec3{
+    background-image: url(images/technology2.jpg);  
+}
+#sec4{
+    /* background-image: url(images/phone224.jpg);   */
+    /* height: 70%; */
+}
+.backimg{
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+}
+.head{
+    display: flex;
+    height: 5vh;
+    width: 80vw;
+    font-size: 4rem;
+    align-items: center;
+    border-radius: 15px;
+    background-color: rgb(117, 117, 187);
+    backdrop-filter: blur(15px);
+    background-color: rgba(53, 104, 131, 0.384);
+    box-shadow:0px 0.7px 0px 0px rgb(247, 243, 243);
+    text-align: center;
+    justify-content: center;
+    margin: 2vh 2vh 2vh 2vh;
+    box-shadow: 0px 1px 0px white;
+    padding:1vh 2vh 2vh 2vh;
+}
+.content
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 3vmin;
+}
+.lft{ 
+    
+    height: 25vmax;
+    width: 40vw;
+    /* background-color: yellow; */
+    padding: 5vh 5vh 5vh 5vh;
+    
+
+}
+#lft1{
+    background-image: url(images/Adobe\ Express\ -\ file\ \(1\).png);
+}
+#lft2{ 
+    padding-top: 10vh;
+    background-image: url(images/media-470346.png);
+}
+#lft3{ 
+    /* padding-top: 10vh; */
+    background-image: url(images/android-mobile-app-development-7815022.png);
+}
+
+
+.rght{
+    height: 47vmin;
+    width: 40vw;
+    background-color: rgb(22, 24, 22);
+    /* backdrop-filter: blur(3px); */
+    
+    backdrop-filter: blur(7px);
+    background-color: rgba(33, 51, 61, 0.384);
+
+    -webkit-backdrop-filter: blur(1px);
+    /* opacity: 0.5; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    box-shadow: 0px 1px 0px white;
+    padding: 2vh 2vh 0vh 2vh;
+    font-size: 1.4rem;
+    font-weight: 100;
+    color: white;
+    /* border: 1px solid white;  */
+    border-radius: 15px;
+    margin-right: 7vmin;
+    
+}
+#sub1{
+    margin-top: -1vh;
+    font-size: 2rem;
 }
